@@ -1,5 +1,7 @@
 body {
   background-color: white;
+  margin: 0;
+
 }
 small {
     font-size: smaller;
@@ -20,21 +22,42 @@ small {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    
 
+
+}
+
+ul li:before {
+    content: '•';
+    padding-right: 0.5em;
+
+}
+
+ul {
+  padding-left: 2em;
+  list-style-type: none;
 }
 
 .courseList,.summaryList {
-    list-style: none;
-	column-count: 2;
-	margin-left: -2.42em;
-	list-style: none;
-	list-style-type: square !important;
-	list-style-position: inside;
-	text-align:justify
-
-
+  clear: both;
+  padding-left: 1.47em;
 }
+.courseList li,.summaryList li {
+  text-indent: -1.1em !important;
+  margin-left: 0.6em;
+}
+
+
+  .courseList,.summaryList {
+    column-count: 2;
+
+  }
+
+  .workDate, .educationDate {
+    float: right;
+
+  }
+
+
 .heading{
   font-size: 15pt;
   text-transform: uppercase;
@@ -43,6 +66,19 @@ small {
 
 
 }
+
+.showOnPrint {
+  color: #808284;
+  display: inline-block;
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: .4em;
+  margin-bottom: 2%;
+  font-family: 'Gudea', sans-serif;
+
+
+}
+
 
 .name {
   color: black;
@@ -53,7 +89,6 @@ small {
   font-family: 'Gudea', sans-serif;
 
 }
-@media (min-width: 565px){
 .contact-info {
   color: #808284;
   display: inline-block;
@@ -67,29 +102,19 @@ small {
   right: 16px;
   font-family: 'Gudea', sans-serif;
 
-}}
-
-@media (max-width: 564px){
-.contact-info {
-  color: #808284;
-  display: inline-block;
-  font-size: 1em;
-  letter-spacing: 1px;
-  line-height: .1em;
-  #margin-top: 1.1em;
-  margin-bottom: 2%;
-  #position: absolute;
-  #top: 8px;
-  #right: 16px;
-  font-family: 'Gudea', sans-serif;
-
-}}
+}
+.download,.concepts, .hide {
+  display: none;
+}
 
 #resume li{
     margin-top: -1%;
     margin-bottom: 1%;
-    text-indent: 1.1em;
-    list-style-type: square;
+    text-indent: -1.1em;
+}
+
+#resume ul {
+
 }
 
 
@@ -97,14 +122,12 @@ small {
     margin-top: -2.7%;
     padding-top: 0;
     font-size: 110%;
-    float: right;
     text-align: right;
 }
 .workDate{
     margin-top: -7%;
     padding-top: 0;
     font-size: 110%;
-    float: right;
     text-align: right;
 
 }
@@ -138,17 +161,6 @@ style.scss:18
   margin-top: 1%;
   margin-bottom: -1.5%;
   font-weight: bold;
-}
-.links-container {
-  color: #808284;
-  display: inline-block;
-  font-size: 1em;
-  letter-spacing: 1px;
-  line-height: .4em;
-  margin-bottom: 2%;
-  font-family: 'Gudea', sans-serif;
-
-
 }
 
 .contact-detail {

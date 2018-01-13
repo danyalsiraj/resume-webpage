@@ -20,20 +20,51 @@ small {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    
+
 
 }
 
+ul li:before {
+    content: '•';
+    padding-right: 0.5em;
+
+}
+.showOnPrint {
+  display: none;
+}
+
+ul {
+  padding-left: 2em;
+  list-style-type: none;
+}
+
 .courseList,.summaryList {
-    list-style: none;
-	column-count: 2;
-	margin-left: -2.42em;
-	list-style: none;
-	list-style-type: square !important;
-	list-style-position: inside;
-	text-align:justify
+  clear: both;
+  padding-left: 1.47em;
+}
+.courseList li,.summaryList li {
+  text-indent: -1.1em !important;
+  margin-left: 0.6em;
+}
 
 
+@media(min-width: 821px) {
+  .courseList,.summaryList {
+  	column-count: 2;
+
+  }
+}
+@media(min-width: 701px) {
+  .workDate, .educationDate {
+    float: right;
+
+  }
+}
+@media(max-width: 700px) {
+  .workDate, .educationDate {
+    float: none;
+
+  }
 }
 .heading{
   font-size: 15pt;
@@ -88,8 +119,11 @@ small {
 #resume li{
     margin-top: -1%;
     margin-bottom: 1%;
-    text-indent: 1.1em;
-    list-style-type: square;
+    text-indent: -1.1em;
+}
+
+#resume ul {
+
 }
 
 
@@ -97,14 +131,12 @@ small {
     margin-top: -2.7%;
     padding-top: 0;
     font-size: 110%;
-    float: right;
     text-align: right;
 }
 .workDate{
     margin-top: -7%;
     padding-top: 0;
     font-size: 110%;
-    float: right;
     text-align: right;
 
 }
