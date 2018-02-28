@@ -14,9 +14,24 @@ body {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    
+    margin-bottom: 10px;
+     margin-top: 0px;
 
+}
+.showOnPrint {
+  color: #808284;
+  display: inline-block;
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: .4em;
+  margin-bottom: 2%;
+  font-family: 'Gudea', sans-serif;
+
+
+}
+
+.hide,.download,.concepts,.projects{
+  display: none;
 }
 
 .heading{
@@ -108,17 +123,7 @@ style.scss:18
   margin-bottom: -1.5%;
   font-weight: bold;
 }
-.links-container {
-  color: #808284;
-  display: inline-block;
-  font-size: 1em;
-  letter-spacing: 1px;
-  line-height: .4em;
-  margin-bottom: 2%;
-  font-family: 'Gudea', sans-serif;
 
-
-}
 
 .contact-detail {
   color: #58585B;
